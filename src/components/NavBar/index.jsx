@@ -41,7 +41,7 @@ export default function Nav() {
   return (
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4} py={3}>
-        <Flex h={16} alignItems={"center"} justifyContent={"center"}>
+        <Flex h={32} alignItems={"center"} justifyContent={"center"}>
           <Box>
             <Image src={Logo} alt="Lingua Franca" />
           </Box>
