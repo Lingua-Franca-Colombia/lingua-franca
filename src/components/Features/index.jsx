@@ -43,7 +43,7 @@ export default function gridListWithCTA() {
               as={Link}
               to="https://wa.link/v2fhzb"
               target="_blank"
-              colorScheme="green"
+              colorScheme="purple"
               size="md"
               _hover={{ textDecoration: "none" }}
             >
