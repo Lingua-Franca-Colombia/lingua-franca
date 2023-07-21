@@ -45,10 +45,10 @@ export default function WithBackgroundImage() {
           </Text>
           <Stack direction={"row"}>
             <Button
-              bg={"blue.400"}
+              bg={"green.400"}
               rounded={"full"}
               color={"white"}
-              _hover={{ bg: "blue.500" }}
+              _hover={{ bg: "green.500" }}
               onClick={handleClick}
             >
               Sobre Nosotros
