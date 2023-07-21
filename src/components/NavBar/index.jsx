@@ -17,7 +17,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import { Image } from "@chakra-ui/react";
 
 const NavLink = ({ children }) => (
