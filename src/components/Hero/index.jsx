@@ -6,6 +6,7 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import "@fontsource/quicksand"
 
 import { Link } from "react-router-dom";
 
@@ -28,6 +29,7 @@ export default function WithBackgroundImage() {
       backgroundPosition={"center center"}
     >
       <VStack
+        fontFamily={"Quicksand"}
         w={"full"}
         justify={"center"}
         px={useBreakpointValue({ base: 4, md: 8 })}
@@ -45,7 +47,7 @@ export default function WithBackgroundImage() {
           </Text>
           <Stack direction={"row"}>
             <Button
-              bg={"green.400"}
+              bg={"brand.200"}
               rounded={"full"}
               color={"white"}
               _hover={{ bg: "green.500" }}

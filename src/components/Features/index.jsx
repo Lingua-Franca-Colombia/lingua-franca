@@ -11,11 +11,13 @@ import {
 } from "@chakra-ui/react";
 import {} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import "@fontsource/poppins"
+import "@fontsource/quicksand"
 
 const Feature = ({ heading, text }) => {
   return (
     <GridItem>
-      <chakra.h3 fontSize="xl" fontWeight="600">
+      <chakra.h3 fontFamily={"Poppins"} fontSize="xl" fontWeight="600">
         {heading}
       </chakra.h3>
       <chakra.p>{text}</chakra.p>
@@ -35,7 +37,7 @@ export default function gridListWithCTA() {
         gap={4}
       >
         <GridItem colSpan={1}>
-          <VStack alignItems="flex-start" spacing="20px">
+          <VStack fontFamily={"Quicksand"} alignItems="flex-start" spacing="20px">
             <chakra.h2 fontSize="3xl" fontWeight="700">
               Sobre Lingua Franca
             </chakra.h2>
@@ -43,7 +45,8 @@ export default function gridListWithCTA() {
               as={Link}
               to="https://wa.link/v2fhzb"
               target="_blank"
-              colorScheme="purple"
+              bg ="brand.100"
+              color="white"
               size="md"
               _hover={{ textDecoration: "none" }}
             >
@@ -53,7 +56,7 @@ export default function gridListWithCTA() {
         </GridItem>
         <GridItem>
           <Flex>
-            <chakra.p>
+            <chakra.p fontFamily={"Poppins"}>
               Somos un emprendimiento que inició en 2020 como un servicio de
               tutorias y traducciones en idiomas extranjeros. Actualmente, nos
               proponemos ser un proveedor de servicios comunicativos y digitales
