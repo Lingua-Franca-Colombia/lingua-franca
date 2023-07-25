@@ -3,14 +3,28 @@ import React, { useEffect } from "react";
 
 export default function index() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://tally.so/widgets/embed.js";
-    script.async = true;
-    document.getElementById("tally-js").appendChild(script);
+    const d = document;
+    const w = 'https://tally.so/widgets/embed.js';
 
-    return () => {
-      document.getElementById("tally-js").removeChild(script);
+    const loadEmbeds = () => {
+      if (typeof Tally !== 'undefined') {
+        Tally.loadEmbeds();
+      } else {
+        d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach((iframe) => {
+          iframe.src = iframe.dataset.tallySrc;
+        });
+      }
     };
+
+    if (typeof Tally !== 'undefined') {
+      loadEmbeds();
+    } else if (d.querySelector('script[src="' + w + '"]') == null) {
+      const script = d.createElement('script');
+      script.src = w;
+      script.onload = loadEmbeds;
+      script.onerror = loadEmbeds;
+      d.body.appendChild(script);
+    }
   }, []);
 
   return (
