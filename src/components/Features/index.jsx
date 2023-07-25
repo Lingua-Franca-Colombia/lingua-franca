@@ -11,13 +11,13 @@ import {
 } from "@chakra-ui/react";
 import {} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import "@fontsource/poppins"
-import "@fontsource/quicksand"
+import "@fontsource/poppins";
+import "@fontsource/quicksand";
 
 const Feature = ({ heading, text }) => {
   return (
-    <GridItem>
-      <chakra.h3 fontFamily={"Poppins"} fontSize="xl" fontWeight="600">
+    <GridItem fontFamily={"Poppins"}>
+      <chakra.h3 fontSize="xl" fontWeight="600">
         {heading}
       </chakra.h3>
       <chakra.p>{text}</chakra.p>
@@ -37,7 +37,11 @@ export default function gridListWithCTA() {
         gap={4}
       >
         <GridItem colSpan={1}>
-          <VStack fontFamily={"Quicksand"} alignItems="flex-start" spacing="20px">
+          <VStack
+            fontFamily={"Quicksand"}
+            alignItems="flex-start"
+            spacing="20px"
+          >
             <chakra.h2 fontSize="3xl" fontWeight="700">
               Sobre Lingua Franca
             </chakra.h2>
@@ -45,10 +49,10 @@ export default function gridListWithCTA() {
               as={Link}
               to="https://wa.link/v2fhzb"
               target="_blank"
-              bg ="brand.100"
+              bg="brand.100"
               color="white"
               size="md"
-              _hover={{ textDecoration: "none" }}
+              _hover={{ textDecoration: "none", bg: "brand.300" }}
             >
               Chatea con nosotros
             </Button>

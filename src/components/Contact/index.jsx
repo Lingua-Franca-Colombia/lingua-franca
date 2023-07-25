@@ -30,7 +30,7 @@ export default function index() {
   }, []);
 
   return (
-    <Box as={Container} maxW="7xl" my={14} p={4} id="contact">
+    <Box as={Container} maxW="7xl" id="contact">
       <iframe
         data-tally-src="https://tally.so/embed/meQ5Xk?alignLeft=1&transparentBackground=1&dynamicHeight=1"
         loading="lazy"

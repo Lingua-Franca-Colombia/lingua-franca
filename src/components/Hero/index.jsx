@@ -6,7 +6,7 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import "@fontsource/quicksand"
+import "@fontsource/quicksand";
 
 import { Link } from "react-router-dom";
 
@@ -50,7 +50,7 @@ export default function WithBackgroundImage() {
               bg={"brand.200"}
               rounded={"full"}
               color={"white"}
-              _hover={{ bg: "green.500" }}
+              _hover={{ bg: "brand.400" }}
               onClick={handleClick}
             >
               Sobre Nosotros
