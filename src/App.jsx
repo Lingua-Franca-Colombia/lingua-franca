@@ -5,15 +5,15 @@ import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-      </Routes>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<NavBar />
+			<Routes>
+				<Route path="/" element={<MainPage />} />
+			</Routes>
+			<Footer />
+		</>
+	);
 }
 
 export default App;

@@ -4,13 +4,13 @@ import Features from "../Features";
 import Contact from "../Contact";
 
 function MainPage() {
-  return (
-    <>
-      <Hero />
-      <Features />
-      <Contact />
-    </>
-  );
+	return (
+		<>
+			<Hero />
+			<Features />
+			<Contact />
+		</>
+	);
 }
 
 export default MainPage;
