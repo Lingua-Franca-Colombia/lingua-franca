@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6, button, .font-heading {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom scrollbar compatible with Chrome, Edge, Brave, Opera & Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5818E8 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5818E8;
+  border-radius: 9999px;
+}
